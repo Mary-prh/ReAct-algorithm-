@@ -14,7 +14,7 @@ This script sets up a tool that counts the number of alphabetic characters in a 
 
 This script sets up a tool that fetches a random fact from an online API and returns it to the user.
 
-### main_concurrency.py
+### main_currency.py
 
 This script sets up a tool that performs real-time currency conversion. It takes user input in the format 'amount from_currency to to_currency' (e.g., '100 USD to CAD'), fetches the current exchange rate using the ExchangeRate-API, and returns the converted amount.
 
