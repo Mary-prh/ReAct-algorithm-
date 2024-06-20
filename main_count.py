@@ -98,7 +98,12 @@ if __name__ == '__main__':
     # Execution
     agent_step = ""
     while not isinstance(agent_step, AgentFinish):
-        agent_step: Union[AgentAction, AgentFinish] = agent.invoke(input={"input": "what is the length of 'freedom!'",
+        user_input = input("Enter your question (or 'exit' to quit): ")
+
+        if user_input.lower() == 'exit':
+            break
+
+        agent_step: Union[AgentAction, AgentFinish] = agent.invoke(input={"input": f"what is the length of '{user_input}'",
                                                                           "agent_scratchpad": intermediate_step})
         print(">>>>> Answer after execution: ", agent_step)
 
